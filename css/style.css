@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    background-color: #F7ECDE;
+}
+body{
+    background-color: #F7ECDE;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title h1{
+position: relative;
+width: fit-content;
+font-size: 60px;
+z-index: 1;
+  font-family: "Pacifico", cursive;
+
+
+}
+.title h1::after{
+    padding: 0px 5px;
+content: "";
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+height: 50%;
+background-color: rgb(241, 171, 80);
+z-index: -1;
+transition: all 0.5s;
+}
+.title h1:hover::after{
+height: 100%;
+
+}
+.bookSection .container{
+    border-width: 1px 0px;
+    border-style: dotted;
+    
+}
+.bookSection svg{
+    font-size: 30px;
+}
+

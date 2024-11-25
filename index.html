@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookmaker</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Pacifico&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <div class="title w-100 text-center mt-5">
+        <h1>Bookmaker</h1>
+    </div>
+
+    <!--  -->
+    <section class="bookSection my-5 border-1">
+        <div class="container">
+            <div class="d-flex justify-content-center align-items-center py-5">
+                <i class="fa-solid fa-bookmark text-success"></i>
+                <h3 class="mx-2 text-success" style="font-family: 'Righteous', sans-serif">
+                    Bookmark your favorite sites
+                </h3>
+                <i class="fa-solid fa-bookmark text-success"></i>
+            </div>
+            <div class="mb-3">
+                <i class="fa-solid fa-book-bookmark pe-2 fs-6"></i>
+                <label for="exampleFormControlInput1" class="form-label">Site Name</label>
+                <input type="text" class="form-control" id="webName" placeholder="Bookmark Name" />
+                <p id="nameMessage" class="alert alert-danger d-none">
+                    Site Name is not valid, Please follow the rule below :Site name must contain at least 3 characters
+                </p>
+            </div>
+
+            <div class="mb-3">
+                <i class="fa-solid fa-link fs-6"></i>
+                <label for="exampleFormControlInput1" class="form-label">Site URL</label>
+                <input type="url" class="form-control" id="webLink" placeholder="Website URL" />
+                <p id="linkMessage" class="alert alert-danger d-none">Site URL is not valid, Please follow the rule
+                    below : Example( https://www.google.com )
+                </p>
+
+            </div>
+
+            <div class="text-center">
+                <button type="submit" class="btn btn-danger px-5 py-2 mb-4" onclick="add()">
+                    Submit
+                </button>
+            </div>
+        </div>
+    </section>
+    <!--  -->
+    <div class="container">
+
+        <table class="table text-center">
+            <thead>
+                <tr>
+                    <th scope="col" id="CCC">index</th>
+                    <th scope="col" id="DDD">Website Name</th>
+                    <th scope="col">visit</th>
+                    <th scope="col">delete</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+
+            </tbody>
+        </table>
+
+    </div>
+
+    <a href="http://" target="_blank" rel="noopener noreferrer"></a>
+    <script src="./js/all.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
